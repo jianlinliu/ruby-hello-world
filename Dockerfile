@@ -11,6 +11,7 @@ WORKDIR /tmp/
 
 ENV RACK_ENV production
 ENV RAILS_ENV production
+ENV HTTP_PROXY file.rdu.redhat.com:3128
 
 EXPOSE 8080
 CMD ["ruby", "app.rb"]
